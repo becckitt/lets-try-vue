@@ -1,10 +1,12 @@
 import Vue from 'vue'
-import Router from 'vue-router'
+import VueRouter from 'vue-router'
+import VueResource from 'vue-resource'
 import Article from '@/components/Article'
 
-Vue.use(Router)
+Vue.use(VueRouter)
+Vue.use(VueResource)
 
-export default new Router({
+export default new VueRouter({
   routes: [
     {
       path: '/',
