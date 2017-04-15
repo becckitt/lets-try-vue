@@ -2,7 +2,6 @@
   <div class="ad">
     <div class="inner-ad" v-html="content"></div>
   </div>
-
 </template>
 
 <script>
