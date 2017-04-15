@@ -1,8 +1,7 @@
 <template>
-  <div class="ad">
+  <div class="ad" v-bind:class="{'ad-loaded': adLoaded}">
     <div class="inner-ad" v-html="content"></div>
   </div>
-
 </template>
 
 <script>
@@ -14,20 +13,21 @@
       }
     },
     created () {
+      this.adLoaded = false
       this.fetchAd()
     },
     methods: {
       fetchAd: function () {
-        let id = this.id
-        this.$http.get('https://voxadserver.herokuapp.com/ads/ad-' + id).then(response => {
+        let adId = this.adId
+        this.$http.get('https://voxadserver.herokuapp.com/ads/' + adId).then(response => {
           this.content = response.body
-          this.$el.classList.add('ad-loaded')
+          this.adLoaded = true
         }, response => {
-          console.log('Ad ' + id + ' failed to load.')
+          console.log(adId + ' failed to load.')
         })
       }
     },
-    props: ['id']
+    props: ['adId']
   }
 </script>
 
