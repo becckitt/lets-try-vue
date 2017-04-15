@@ -18,11 +18,12 @@
     },
     methods: {
       fetchAd: function () {
-        var id = this.id
-        this.$http.get('https://voxadserver.herokuapp.com/ads/ad-' + id).then(function (response) {
+        let id = this.id
+        this.$http.get('https://voxadserver.herokuapp.com/ads/ad-' + id).then(response => {
           this.content = response.body
-        }, function (response) {
-          this.content = 'Ad failed to load.'
+          this.$el.classList.add('ad-loaded')
+        }, response => {
+          console.log('Ad ' + id + ' failed to load.')
         })
       }
     },
@@ -35,7 +36,7 @@
     font-size: 2rem;
   }
 
-  .ad {
+  .ad.ad-loaded {
     max-width: 800px;
     width: 100%;
     margin: 0 auto;
@@ -43,7 +44,7 @@
     min-height: 600px;
   }
 
-  .inner-ad {
+  .ad-loaded > .inner-ad {
     height: 600px;
   }
 </style>
