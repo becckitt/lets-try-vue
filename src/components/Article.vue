@@ -11,7 +11,7 @@
         
         <p>Phan, who is almost 30, is one of YouTube’s biggest success stories and arguably one of the most popular and recognizable so-called beauty gurus on the platform, with almost 9 million subscribers and well over a billion views of her videos. Then there’s <a href="https://www.ipsy.com/">Ipsy</a>, her beauty sampling company, which is worth a reported <a href="https://www.forbes.com/sites/natalierobehmed/2015/10/05/how-michelle-phan-built-a-500-million-company/#18ef3a698c4a">$500 million</a>.</p>
 
-        <ad id="1"></ad>
+        <ad adId="ad-1"></ad>
 
         <p>Phan is successful in her field, if not at the very top of it. At the beginning of 2016, she landed on the covers of both <a href="https://www.forbes.com/pictures/mkl45ehmdj/michelle-phan-27/#3f1a54542065"><em>Forbes</em></a> and <a href="http://www.nylon.com/articles/michelle-phan-february-cover-star"><em>Nylon</em></a>, lauded for her success both online and off. She should have been damn pleased with herself at that point. But that’s not how she felt.</p>
 
@@ -31,7 +31,7 @@
 
         <p>Phan started working on Ipsy around 2010, and L'Oréal reached out about starting a beauty line with her around the same time. L'Oréal is known for acquiring and nurturing brands like Urban Decay and NYX, so Em was a startup experience for the company. “I don’t think me having my own makeup line was a dream I’ve always wanted,” she says. “It was an opportunity that L'Oréal brought to me, and I’m not gonna say no to that opportunity. I knew that it would be such an amazing experience building something like that.” Great opportunity aside, Phan was now involved in launching two startups simultaneously, and she shuttled between the East and West coasts for several years.</p>
 
-        <ad id="2"></ad>
+        <ad adId="ad-2"></ad>
 
         <p>When Em imploded, Phan didn’t take it well, but now she views it as a second chance. “I was really hurt when the brand didn’t take off,” she says. “It just sucked. It was three years of my life gone, just like that. But I learned a lot from that and I think it was really important for me to fail. It was through that failure that I started to get more interested in the business aspect of everything.” Several times during the course of our conversation, she says, “I’m going to learn from all of these mistakes.”</p>
 
@@ -51,7 +51,7 @@
 
         <p>Phan also knows that YouTubers and Instagram beauty gurus are in a challenging place right now, because there is so much competition. She discourages her mentees from doing gimmicky videos (like using a <a href="http://www.racked.com/2017/2/8/14491942/silisponge-silicone-makeup-sponge-review">condom to apply makeup</a>), but understands why they do. “It’s shock value,” she says. “That’s the only way for them to get views. When I started there were probably fewer than five people [doing makeup videos], and now you probably have 50,000 or maybe more globally. I’ve mentored a few people who started doing these gimmicky things and I told them, ‘You’re going to burn out very fast and you’re not going to have a loyal community,’ and sure enough they blow up and then lose steam really fast.”</p>
 
-        <ad id="3"></ad>
+        <ad adId="ad-3"></ad>
 
         <p>For now, Phan is relishing what she calls her second chance. “I’m actually happy that Em didn’t do well, because I’m happy that I own it,” she says. “It is my makeup brand, it’s not L'Oréal’s makeup brand. It’s not for me; it’s for my viewers who have been there since the beginning.”</p>
 
