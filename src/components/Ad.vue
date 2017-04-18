@@ -23,7 +23,6 @@
         this.$http.get('https://voxadserver.herokuapp.com/ads/' + adId).then(response => {
           this.content = response.body
           this.adLoaded = true
-          console.log(adId + 'loaded.')
         }, response => {
           console.log(adId + ' failed to load.')
         })
