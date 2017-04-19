@@ -65,15 +65,30 @@
 
 <script>
   import Ad from '@/components/Ad'
+  import SessionData from '../session-data.js'
+
   export default {
     name: 'article',
     components: {
       Ad
     },
+    created () {
+      this.startTime = Date.now()
+    },
     data () {
       return {
         title: 'The Rebirth of YouTube Beauty Pioneer Michelle Phan',
         subtitle: 'After 10 years and over a billion views, she stopped posting and “peaced out.”'
+      }
+    },
+    methods: {
+      timeOnPage () {
+        let endTime = Date.now()
+        let totalTimeOnPage = endTime - this.startTime
+        // SessionData.$emit('time-on-page', totalimeOnPage)
+      }
+      scrollDepth () {
+        
       }
     }
   }

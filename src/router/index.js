@@ -3,11 +3,9 @@ import VueRouter from 'vue-router'
 import VueResource from 'vue-resource'
 import Article from '@/components/Article'
 import VueLazyLoad from 'vue-lazyload'
-import Analytics from './analytics.js'
 
 Vue.use(VueRouter)
 Vue.use(VueResource)
-Vue.use(Analytics)
 
 Vue.use(VueLazyLoad, {
   preLoad: 1.2,

@@ -5,12 +5,8 @@
 </template>
 
 <script>
-import './analytics.js'
-const appAnalytics = new AppAnalytics()
-
 export default {
-  name: 'app',
-  analytics: appAnalytics
+  name: 'app'
 }
 </script>
 
