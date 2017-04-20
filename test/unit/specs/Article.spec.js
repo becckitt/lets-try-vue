@@ -21,4 +21,10 @@ describe('Article', () => {
     const vm = new Vue(Article).$mount()
     expect(typeof vm.$options.components.Ad).to.be.equal('object')
   })
+  it('captures time spent on page', () => {
+
+  })
+  it('captures how far user has scrolled', () => {
+    const vm = new Vue(Article).$mount()
+  })
 })

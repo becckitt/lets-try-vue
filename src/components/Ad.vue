@@ -7,6 +7,8 @@
 </template>
 
 <script>
+  import SessionData from '../session-data.js'
+
   export default {
     name: 'ad',
     data () {
@@ -23,9 +25,18 @@
         this.$http.get('https://voxadserver.herokuapp.com/ads/' + adId).then(response => {
           this.content = response.body
           this.adLoaded = true
+          this.emitAdSessionData(adId, Date.now())
         }, response => {
           console.log(adId + ' failed to load.')
         })
+      },
+      emitAdSessionData (adId, adLoadTime) {
+        let timeSinceAdLoad = adLoadTime - this.$parent.startTime
+        let adSessionData = {
+          'id': adId,
+          'time': timeSinceAdLoad
+        }
+        SessionData.$emit(adId, adSessionData)
       }
     },
     props: ['adId']

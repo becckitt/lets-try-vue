@@ -72,9 +72,6 @@
     components: {
       Ad
     },
-    created () {
-      this.startTime = Date.now()
-    },
     data () {
       return {
         title: 'The Rebirth of YouTube Beauty Pioneer Michelle Phan',
@@ -84,11 +81,25 @@
     methods: {
       timeOnPage () {
         let endTime = Date.now()
-        let totalTimeOnPage = endTime - this.startTime
-        // SessionData.$emit('time-on-page', totalimeOnPage)
-      }
+        let totalTimeOnPage = endTime - this.$parent.startTime
+        return totalTimeOnPage
+      },
       scrollDepth () {
-        
+        let articleHeight = this.$root.$el.scrollHeight
+        let windowHeight = window.innerHeight
+        let totalScrollableHeight = articleHeight - windowHeight
+        let scrollTop = window.pageYOffset
+        let scrollDepthPercentage = Math.floor(scrollTop / totalScrollableHeight)
+        return scrollDepthPercentage
+      },
+      emitArticleSessionData () {
+        let timeOnPage = timeOnPage()
+        let scrollDepth = scrollDepth()
+        let analytics = {
+          'total_time': timeOnPage,
+          'scroll_depth': scrollDepth
+        }
+        SessionData.$emit('analytics', analytics)
       }
     }
   }
